@@ -1,0 +1,39 @@
+{
+  "name": "dsh-mimo-studio-link",
+  "version": "1.0.0",
+  "description": "在左侧栏增加入口，点击后通过 DSH 内置浏览器面板打开原生 Xiaomi MiMo Studio 网页版。",
+  "license": "MIT",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jyz48prsbr-netizen/dsh-mimo-studio-link.git"
+  },
+  "keywords": ["deepseek-harness", "dsh", "dsh-plugin", "web-link", "sidebar", "mimo"],
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./package.json": "./package.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "docs",
+    "icon.svg"
+  ],
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-sidebar",
+        "@deepseek-ai/dsh-client-ui-sidebar-right",
+        "@deepseek-ai/dsh-client-ui-sidebar-browser"
+      ]
+    }
+  }
+}
