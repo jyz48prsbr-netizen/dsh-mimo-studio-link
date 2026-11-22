@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "MiMo Studio 网页版入口",
+    "title": "MiMo 网页版入口",
     "description": "在左侧栏增加入口，点击后通过 DSH 内置浏览器面板打开原生 Xiaomi MiMo Studio 网页版。",
     "detail": "docs/DETAIL.md"
   }

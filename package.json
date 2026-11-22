@@ -1,6 +1,6 @@
 {
   "name": "dsh-mimo-studio-link",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "在左侧栏增加入口，点击后通过 DSH 内置浏览器面板打开原生 Xiaomi MiMo Studio 网页版。",
   "license": "MIT",
   "type": "module",

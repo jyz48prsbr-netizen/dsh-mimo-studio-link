@@ -247,7 +247,7 @@ window.__ModuleLoader__.load({
           // Resolve the label from the browser language directly, NOT from this
           // plugin's locale dictionary: other plugins (e.g. the sidebar entry
           // manager) call this function from their own locale scope.
-          label: () => 'MiMo Studio',
+          label: () => (String(navigator.language || 'zh').toLowerCase().indexOf('zh') === 0 ? 'MiMo 网页版' : 'MiMo Web'),
           locale: NS,
         }, function PanelIcon({ size }) {
           return h(EntryIcon, { size })
